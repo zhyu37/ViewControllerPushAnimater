@@ -6,15 +6,23 @@
 //  Copyright © 2015年 ZhYu. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "ZYViewController.h"
 
-@interface ViewController ()
+@interface ZYViewController ()
 
 @end
 
-@implementation ViewController
+@implementation ZYViewController
 
 #pragma mark - life cycle
+
+- (instancetype)init
+{
+    if (self = [super init]) {
+        
+    }
+    return self;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];

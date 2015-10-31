@@ -7,11 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FB2B9B1D1BE4E4D6004AD703 /* ZYSwipeUpInteractiveTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = FB2B9B1C1BE4E4D6004AD703 /* ZYSwipeUpInteractiveTransition.m */; };
+		FB2B9B201BE4ED7D004AD703 /* ZYPopAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = FB2B9B1F1BE4ED7D004AD703 /* ZYPopAnimation.m */; };
 		FB4327621BE4961000FBFABD /* ZYMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB4327611BE4961000FBFABD /* ZYMainViewController.m */; };
 		FB4327681BE4994300FBFABD /* ZYAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = FB4327671BE4994300FBFABD /* ZYAnimation.m */; };
 		FB5C248F1BE3A88E005C9DEE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FB5C248E1BE3A88E005C9DEE /* main.m */; };
 		FB5C24921BE3A88E005C9DEE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FB5C24911BE3A88E005C9DEE /* AppDelegate.m */; };
-		FB5C24951BE3A88E005C9DEE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB5C24941BE3A88E005C9DEE /* ViewController.m */; };
+		FB5C24951BE3A88E005C9DEE /* ZYViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB5C24941BE3A88E005C9DEE /* ZYViewController.m */; };
 		FB5C24981BE3A88E005C9DEE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB5C24961BE3A88E005C9DEE /* Main.storyboard */; };
 		FB5C249A1BE3A88E005C9DEE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB5C24991BE3A88E005C9DEE /* Assets.xcassets */; };
 		FB5C249D1BE3A88E005C9DEE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB5C249B1BE3A88E005C9DEE /* LaunchScreen.storyboard */; };
@@ -37,6 +39,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FB2B9B1B1BE4E4D6004AD703 /* ZYSwipeUpInteractiveTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYSwipeUpInteractiveTransition.h; sourceTree = "<group>"; };
+		FB2B9B1C1BE4E4D6004AD703 /* ZYSwipeUpInteractiveTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYSwipeUpInteractiveTransition.m; sourceTree = "<group>"; };
+		FB2B9B1E1BE4ED7D004AD703 /* ZYPopAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYPopAnimation.h; sourceTree = "<group>"; };
+		FB2B9B1F1BE4ED7D004AD703 /* ZYPopAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYPopAnimation.m; sourceTree = "<group>"; };
 		FB4327601BE4961000FBFABD /* ZYMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYMainViewController.h; sourceTree = "<group>"; };
 		FB4327611BE4961000FBFABD /* ZYMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYMainViewController.m; sourceTree = "<group>"; };
 		FB4327661BE4994300FBFABD /* ZYAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYAnimation.h; sourceTree = "<group>"; };
@@ -46,8 +52,8 @@
 		FB5C248E1BE3A88E005C9DEE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FB5C24901BE3A88E005C9DEE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		FB5C24911BE3A88E005C9DEE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		FB5C24931BE3A88E005C9DEE /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		FB5C24941BE3A88E005C9DEE /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		FB5C24931BE3A88E005C9DEE /* ZYViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZYViewController.h; sourceTree = "<group>"; };
+		FB5C24941BE3A88E005C9DEE /* ZYViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZYViewController.m; sourceTree = "<group>"; };
 		FB5C24971BE3A88E005C9DEE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FB5C24991BE3A88E005C9DEE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FB5C249C1BE3A88E005C9DEE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -166,12 +172,16 @@
 		FB5C24C21BE3A8FB005C9DEE /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				FB5C24931BE3A88E005C9DEE /* ViewController.h */,
-				FB5C24941BE3A88E005C9DEE /* ViewController.m */,
 				FB4327601BE4961000FBFABD /* ZYMainViewController.h */,
 				FB4327611BE4961000FBFABD /* ZYMainViewController.m */,
+				FB5C24931BE3A88E005C9DEE /* ZYViewController.h */,
+				FB5C24941BE3A88E005C9DEE /* ZYViewController.m */,
 				FB4327661BE4994300FBFABD /* ZYAnimation.h */,
 				FB4327671BE4994300FBFABD /* ZYAnimation.m */,
+				FB2B9B1E1BE4ED7D004AD703 /* ZYPopAnimation.h */,
+				FB2B9B1F1BE4ED7D004AD703 /* ZYPopAnimation.m */,
+				FB2B9B1B1BE4E4D6004AD703 /* ZYSwipeUpInteractiveTransition.h */,
+				FB2B9B1C1BE4E4D6004AD703 /* ZYSwipeUpInteractiveTransition.m */,
 			);
 			name = Main;
 			sourceTree = "<group>";
@@ -244,6 +254,7 @@
 				TargetAttributes = {
 					FB5C24891BE3A88E005C9DEE = {
 						CreatedOnToolsVersion = 7.1;
+						DevelopmentTeam = 9S6VEWBR5C;
 					};
 					FB5C24A21BE3A88E005C9DEE = {
 						CreatedOnToolsVersion = 7.1;
@@ -308,9 +319,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				FB4327621BE4961000FBFABD /* ZYMainViewController.m in Sources */,
-				FB5C24951BE3A88E005C9DEE /* ViewController.m in Sources */,
+				FB5C24951BE3A88E005C9DEE /* ZYViewController.m in Sources */,
 				FB4327681BE4994300FBFABD /* ZYAnimation.m in Sources */,
 				FB5C24921BE3A88E005C9DEE /* AppDelegate.m in Sources */,
+				FB2B9B201BE4ED7D004AD703 /* ZYPopAnimation.m in Sources */,
+				FB2B9B1D1BE4E4D6004AD703 /* ZYSwipeUpInteractiveTransition.m in Sources */,
 				FB5C248F1BE3A88E005C9DEE /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -450,6 +463,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "ZYPush&PopAnimation/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Zhyu37.ZYPush-PopAnimation";
@@ -461,6 +475,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "ZYPush&PopAnimation/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Zhyu37.ZYPush-PopAnimation";

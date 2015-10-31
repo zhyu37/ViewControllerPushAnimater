@@ -7,12 +7,16 @@
 //
 
 #import "ZYMainViewController.h"
-#import "ViewController.h"
+#import "ZYSwipeUpInteractiveTransition.h"
+#import "ZYViewController.h"
+#import "ZYPopAnimation.h"
 #import "ZYAnimation.h"
 
 @interface ZYMainViewController ()<ViewControllerDelegate, UIViewControllerTransitioningDelegate>
 
 @property (nonatomic, strong) ZYAnimation *animation;
+@property (nonatomic, strong) ZYPopAnimation *popAnimation;
+@property (nonatomic, strong) ZYSwipeUpInteractiveTransition *transitionController;
 
 @end
 
@@ -24,6 +28,8 @@
 {
     if (self = [super init]) {
         _animation = [ZYAnimation new];
+        _popAnimation = [ZYPopAnimation new];
+        _transitionController = [ZYSwipeUpInteractiveTransition new];
     }
     return self;
 }
@@ -46,15 +52,16 @@
 
 - (void)buttonClicked
 {
-    ViewController *mvc =  [[ViewController alloc] init];
+    ZYViewController *mvc =  [[ZYViewController alloc] init];
     mvc.delegate = self;
     mvc.transitioningDelegate = self;
+    [self.transitionController wireToViewController:mvc];
     [self presentViewController:mvc animated:YES completion:nil];
 }
 
 #pragma mark - ViewControllerDelegate
 
-- (void)viewControllerDidClickedDismissButton:(ViewController *)viewController
+- (void)viewControllerDidClickedDismissButton:(ZYViewController *)viewController
 {
     [self dismissViewControllerAnimated:YES completion:nil];
 }
@@ -64,6 +71,17 @@
 - (id <UIViewControllerAnimatedTransitioning>)animationControllerForPresentedController:(UIViewController *)presented presentingController:(UIViewController *)presenting sourceController:(UIViewController *)source
 {
     return self.animation;
+}
+
+#pragma mark - ZYSwipeUpInteractiveTransition
+
+-(id<UIViewControllerAnimatedTransitioning>)animationControllerForDismissedController:(UIViewController *)dismissed
+{
+    return self.popAnimation;
+}
+
+-(id<UIViewControllerInteractiveTransitioning>)interactionControllerForDismissal:(id<UIViewControllerAnimatedTransitioning>)animator {
+    return self.transitionController.interacting ? self.transitionController : nil;
 }
 
 @end
